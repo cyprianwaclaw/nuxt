@@ -15,12 +15,12 @@
 
 
 <script setup lang="ts">
-import { ref, onMounted } from "vue";
+import { ref} from "vue";
 
 const title = ref("");
 const price = ref("");
 
-const update = async() => await $fetch( "https://api.escuelajs.co/api/v1/products/10", {
+const update = async() => await $fetch( "https://api.escuelajs.co/api/v1/products/61", {
         headers: {
            "Content-Type": "application/json",
                   },
@@ -31,5 +31,5 @@ const update = async() => await $fetch( "https://api.escuelajs.co/api/v1/product
          }
     });
     
-const {data} = await useFetch('https://api.escuelajs.co/api/v1/products/10')
+const {data} = await useFetch('https://api.escuelajs.co/api/v1/products/61')
 </script>
